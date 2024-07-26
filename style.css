@@ -1,27 +1,116 @@
 body {
+    height: 100vh;
     margin: 0;
     padding: 0;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 #gridContainer {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    width: 960px;
-    min-height: 960px;
+    width: 720px;
+    height: 720px;
+    border-style: solid;
+    border-width: 8px;
+    border-radius: 12px;
+    border-color: #606676;
 }
 
 #gridContainer div {
     display: flex;
     box-sizing: border-box;
     border-style: solid;
-    border-width: 1px;
-    border-color: black;
+    border-width: 0.1px;
+    border-color: #606676;
+    background-color: #ffffff;
     flex-basis: 1%;
 }
 
 #gridContainer .hover {
-    background-color: aqua;
+    background-color: #96C9F4;
+}
+
+#mainSection {
+    display: flex;
+    min-height: 100%;
+    width: 80%;
+    background-color: #FEF3E2;
+    justify-content: center;
+    align-items: center;
+}
+
+#mainSection #main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#mainSection #main div {
+    font-size: 100px;
+    font-family: "Roboto", sans-serif;
+    color: #647a65;
+}
+
+#mainSection button {
+      display: block;
+      background-color: #96C9F4;
+      color: #ffffff;
+      min-width: 150px;
+      height: auto;
+      padding: 8px;
+      font-size: 20px;
+}
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 75px;
+    height: 100%;
+    margin-left: auto;
+}
+
+header div {
+    padding: 15px 0px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+header div .login {
+    margin-top: auto;
+}
+
+
+#sketchSection {
+    width: 100%;
+    background-color: #BEC6A0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right-style: solid;
+    border-color: #d8e2b5;
+    border-width: 4px;
+}
+
+footer {
+    display: flex;
+    background-color: #708871;
+    width: 125px;
+    border-right-style: solid;
+    border-color: #85a186;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-width: 6px;
+    font-size: 1000px;
+    padding: 15px 0px;
+    justify-content: space-between;
 }
